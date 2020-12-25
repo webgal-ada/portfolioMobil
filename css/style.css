@@ -23,37 +23,41 @@ html {
   max-width: 1400px;
   margin: 0 auto;
 }
-#welcome-section {
+section #welcome-section {
   margin: 0 auto;
   position: relative;
   background-image: url("../images/artwk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 70vh;
+  height: 80vh;
   text-align: center;
 }
 #welcome-section img {
   width: 100%;
 }
-span h1 {
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+div #welcome-section h1 {
   color: var(--gold);
-  font-size: 3.25rem;
-  padding-top: 53%;
   text-shadow: 4px 4px 8px #000;
-  width: 100%;
+  font-size: 2.25rem;
+  margin-top: 200px;
 }
 span h2 {
   color: var(--orangeRed);
   text-shadow: 4px 4px 8px #000;
-  padding-top: 146px;
-  font-size: 1.15rem;
+  font-size: 0.85rem;
+  margin-top: 230px;
 }
 #navbar {
   display: flex;
   font-size: 1.8vw;
   justify-content: space-around;
-  // align-content: center;
   line-height: 40px;
   width: 100%;
   position: fixed;
