@@ -13,14 +13,13 @@ html {
 * {
   box-sizing: border-box;
   margin: 0;
-  // padding: 0;
   font-family: "Montserrat", sans-serif;
   color: #fff;
 }
 .container {
   padding-top: 37px;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 section #welcome-section {
@@ -51,18 +50,18 @@ div #welcome-section h1 {
 span h2 {
   color: var(--orangeRed);
   text-shadow: 4px 4px 8px #000;
-  font-size: 0.85rem;
+  font-size: clamp(0.75rem, -1rem + 8vw, 1.25rem);
   margin-top: 230px;
 }
 #navbar {
   display: flex;
-  font-size: 1.8vw;
+  font-size: clamp(0.5rem, -0.3075rem + 3.2301vw, 0.9rem);
   justify-content: space-around;
-  line-height: 40px;
+  line-height: 54px;
   width: 100%;
   position: fixed;
   top: 0;
-  height: 37px;
+  height: 50px;
   background-color: var(--darkestBlue);
   z-index: 100;
 }
@@ -72,23 +71,24 @@ a {
 a:hover {
   color: red;
 }
-#projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1.2rem;
-}
 .p-title {
-  font-size: 4.5vw;
+  font-size: clamp(1rem, -1rem + 8vw, 2rem);
   text-align: center;
   letter-spacing: 3px;
   padding: 25px 0 20px 0;
 }
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
 section div:nth-child(4) {
   align-self: center;
 }
 .project-tile h2 {
-  font-size: 2.25vw;
+  font-size: 13px;
   padding-bottom: 10px;
 }
 .project-tile {
@@ -98,18 +98,17 @@ section div:nth-child(4) {
 .project-tile img {
   width: 100%;
 }
-article {
-  padding: 5px 15px 25px;
-  font-size: 2.25vw;
+#featured {
+  font-size: 0.75rem;
+  margin: 0 34px 24px;
 }
 article ul li {
+  font-size: 0.55rem;
   list-style-type: none;
-
-  font-size: 2.25vw;
 }
 article h2 {
-  font-size: 2.25vw;
-  margin: 17px 0 24px;
+  font-size: 0.75rem;
+  margin: 17px 0 10px;
   text-align: left;
 }
 ion-icon {
@@ -128,8 +127,23 @@ footer {
 
 @media screen and (min-width: 400px) {
   footer {
-    background-color: var(--orange);
     height: 65px;
     padding-top: 20px;
+  }
+}
+@media screen and (min-width: 680px) {
+  .project-tile h2 {
+    font-size: 16px;
+  }
+  .project-tile {
+    padding-bottom: 4vw;
+    width: 27%;
+  }
+  article:first-of-type {
+    padding: 20px 35px 45px;
+    outline: 0.5px solid #fff;
+  }
+  footer {
+    background-color: salmon;
   }
 }
