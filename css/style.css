@@ -5,7 +5,7 @@
   --orange: #fca61d;
   --gold: #f6c10a;
   --darkestBlue: #131031;
-  --bada55: #baba55;
+  --mint: #baba55;
 }
 html {
   background-color: var(--darkestBlue);
@@ -18,8 +18,6 @@ html {
 }
 .container {
   padding-top: 37px;
-  width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
 }
 section #welcome-section {
@@ -38,20 +36,19 @@ section #welcome-section {
 #welcome-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  gap: 120px;
 }
 div #welcome-section h1 {
   color: var(--gold);
   text-shadow: 4px 4px 8px #000;
   font-size: 2.25rem;
-  margin-top: 200px;
+  margin-top: 304px;
 }
 span h2 {
   color: var(--orangeRed);
   text-shadow: 4px 4px 8px #000;
   font-size: clamp(0.75rem, -1rem + 8vw, 1.25rem);
-  margin-top: 230px;
+  margin-top: 178px;
 }
 #navbar {
   display: flex;
@@ -142,8 +139,5 @@ footer {
   article:first-of-type {
     padding: 20px 35px 45px;
     outline: 0.5px solid #fff;
-  }
-  footer {
-    background-color: salmon;
   }
 }
