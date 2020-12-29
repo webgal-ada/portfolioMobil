@@ -47,7 +47,6 @@ span h2 {
   color: var(--orangeRed);
   text-shadow: 4px 4px 8px #000;
   font-size: clamp(0.75rem, -1rem + 8vw, 1.25rem);
-  margin-top: 178px;
 }
 #navbar {
   display: flex;
@@ -136,7 +135,10 @@ footer {
     width: 27%;
   }
   article:first-of-type {
-    padding: 20px 35px 45px;
+    padding: 20px 35px 34px;
     outline: 0.5px solid #fff;
+  }
+  article ul li {
+    font-size: 0.8rem;
   }
 }
