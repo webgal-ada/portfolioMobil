@@ -36,7 +36,6 @@ section #welcome-section {
 #welcome-section {
   display: flex;
   flex-direction: column;
-  gap: 120px;
 }
 div #welcome-section h1 {
   color: var(--gold);
