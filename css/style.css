@@ -76,7 +76,6 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 1rem;
 }
 
 section div:nth-child(4) {
@@ -97,13 +96,18 @@ section div:nth-child(4) {
   font-size: 0.75rem;
   margin: 0 34px 24px;
 }
+article {
+  margin-bottom: 40px;
+}
+p {
+  margin-top: 25px;
+}
 article ul li {
-  font-size: 0.55rem;
+  font-size: 0.75rem;
   list-style-type: none;
 }
 article h2 {
   font-size: 0.75rem;
-  margin: 17px 0 10px;
   text-align: left;
 }
 ion-icon {
@@ -121,6 +125,9 @@ footer {
 }
 
 @media screen and (min-width: 400px) {
+  .project-tile h2 {
+    font-size: 11px;
+  }
   footer {
     height: 65px;
     padding-top: 20px;
