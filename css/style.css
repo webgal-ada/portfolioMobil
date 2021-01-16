@@ -94,20 +94,19 @@ section div:nth-child(4) {
 }
 #featured {
   font-size: 0.75rem;
-  margin: 0 34px 24px;
+  margin: 0 20px 24px;
 }
 article {
   margin-bottom: 40px;
 }
 p {
-  margin-top: 25px;
+  margin-top: 16px;
 }
 article ul li {
   font-size: 0.75rem;
   list-style-type: none;
 }
 article h2 {
-  font-size: 0.75rem;
   text-align: left;
 }
 ion-icon {
